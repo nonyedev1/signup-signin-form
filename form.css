@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding-top: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: royalblue;
+}
+.signUp{
+  margin: auto;
+  width:400px;
+  height: 550px;
+}
+.signin{
+  width: 90%;
+  height: 450px;
+  display:flex;
+  flex-direction:column;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin:30% auto;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  animation-name: backgroundchange;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+}
+@keyframes backgroundchange{
+  From{
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  to{
+    background-color: black;
+  }
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  width: 90%;
+  line-height: 1.8rem;
+  
+}
+.content h1{
+  text-align: center;
+  padding-bottom: 10px;
+  
+}
+.content input[type="email"], [type="password"]{
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+button{
+  padding: 10px;
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 20px;
+  width: 100%;
+}
+button:hover{
+  background-color: cornflowerblue;
+}
+#cantSignin{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#cantSignin a{
+  color: white;
+  text-decoration: none;
+}
+
+.contentDisplay{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  line-height: 1.8rem;
+  width: 90%; 
+}
+
+.contentDisplay h1{
+  text-align: center;
+  padding-bottom: 10px;
+  
+}
+.contentDisplay input[type="email"], [type="password"], input[type="text"]{
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+.hide{
+  display: none;
+}
